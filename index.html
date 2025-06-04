@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interved</title>
+    <link rel="icon" type="image" href="../logosf.png" />
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      .fade {
+        transition: opacity 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- Header------------------------------------------------------------------------ -->
+    <header class="w-full h-24 shadow-md relative z-10">
+      <div class="container mx-auto flex h-full px-6 items-center relative">
+        <div class="absolute -bottom-10 left-6 p-2 z-20">
+          <img
+            src="./img/logosf.png"
+            alt="logo"
+            class="w-28 h-28 object-contain"
+          />
+        </div>
+
+        <div class="flex-1 flex justify-end me-20 items-center ml-40 pe-20">
+          <nav class="flex gap-8">
+            <a
+              href="#"
+              class="text-black text-2xl hover:text-gray-400 transition"
+            >
+              SOBRE NÓS
+            </a>
+            <a
+              href="#"
+              class="text-black text-2xl hover:text-gray-400 transition"
+            >
+              CONTATO
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Conteudo principal------------------------------------------->
+    <main class="mx-0 px-0 mt-20">
+      <h1 class="text-4xl font-bold text-center text-cyan-600 pb-6">
+        Na interved a sua empresa cresce!
+      </h1>
+
+      <img
+        src="./img/view-inside-new-warehouse-mezzanine-floor-looking-into-hall.jpg"
+        alt=""
+      />
+      <div class="relative w-full h-64 overflow-hidden shadow-lg">
+        <img
+          src="./img/im1.jpg"
+          class="carousel-item block w-full h-full object-cover"
+          alt="Imagem 1"
+        />
+        <img
+          src="./img/im2.jpg"
+          class="carousel-item hidden w-full h-full object-cover"
+          alt="Imagem 2"
+        />
+
+        <button
+          class="prev absolute top-1/2 left-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        >
+          ❮
+        </button>
+        <button
+          class="next absolute top-1/2 right-2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
+        >
+          ❯
+        </button>
+      </div>
+      <div class="justify-center text-center mt-24">
+        Conheça nossos produtos
+      </div>
+
+      <!--Cards das categorias-->
+      <section
+        class="mx-30 min-h-90 mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+      >
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 1</h3>
+          <p>Conteúdo do card 1.</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 2</h3>
+          <p>Conteúdo do card 2.</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 3</h3>
+          <p>Conteúdo do card 3.</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 4</h3>
+          <p>Conteúdo do card 4.</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 5</h3>
+          <p>Conteúdo do card 5.</p>
+        </div>
+
+        <div class="bg-gray-200 rounded-lg p-4 shadow">
+          <h3 class="font-semibold text-lg mb-2">Card 6</h3>
+          <p>Conteúdo do card 6.</p>
+        </div>
+      </section>
+      <!--BOTÃO MODAL----------------------------------------------------->
+      <button
+        id="openModal"
+        class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+      >
+        Abrir Modal
+      </button>
+      <!--MODAL------------------------------------------------------------>
+      <div
+        id="myModal"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+      >
+        <div class="bg-white rounded-lg shadow-lg p-6 w-1/2">
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">Título do Modal</h2>
+            <span
+              id="closeModal"
+              class="text-gray-500 hover:text-black cursor-pointer text-2xl"
+              >&times;</span
+            >
+          </div>
+          <p class="text-gray-700">Este é o conteúdo do modal.</p>
+        </div>
+      </div>
+      <p class="text-center text-3xl">Empresas que usam nossos produtos</p>
+      <!--empresas parceiras------------------------------------------------>
+      <div class="w-full p-6 bg-white rounded-lg shadow-lg justify-center">
+        <div
+          id="carouselContainer"
+          class="grid grid-cols-2 md:grid-cols-5 gap-2 justify-items-center items-center fade opacity-100"
+        >
+          >
+          <!-- Imagens serão inseridas via JS -->
+        </div>
+      </div>
+
+      <!--Footer------------------------------------------------------------->
+      <footer class="bg-[#2F345C] text-white py-8">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4"
+        >
+          <div>
+            <h2 class="text-xl font-bold mb-4">Interved.</h2>
+            <p class="">
+              Com sede em Sorocaba - SP, a Interved Suprimentos fundada em 2018,
+              atende toda a região, se destacando no mercado pelo alto nível de
+              atendimento, onde partimos do princípio do bem-estar e satisfação
+              de nossos clientes.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-lg font-bold mb-4">CONTATO</h2>
+            <p>
+              ENDEREÇO: Av. Carlos Sonetti 807,<br />
+              Jardim Prestes de Barros<br />
+              Sorocaba – SP | CEP 18021-200
+            </p>
+
+            <p class="mt-2">
+              EMAIL:
+              <a
+                href="mailto:contato@interved.com.br"
+                class="text-gray-300 hover:underline"
+                >contato@interved.com.br</a
+              ><br />
+              <a
+                href="mailto:vendas@interved.com.br"
+                class="text-gray-300 hover:underline"
+                >vendas@interved.com.br</a
+              >
+            </p>
+
+            <p class="mt-2">TELEFONE: (15) 3411-8040</p>
+          </div>
+
+          <div>
+            <h2 class="text-lg font-bold mb-4">HORÁRIO DE ATENDIMENTO</h2>
+            <p>7h30 às 17h30</p>
+            <p>Segunda-Feira à Sexta-Feira</p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400"
+        >
+          COPYRIGHT © 2025 INTERVED. TODOS OS DIREITOS RESERVADOS.
+        </div>
+      </footer>
+
+      <script src="./scripts.js"></script>
+    </main>
+  </body>
+</html>
