@@ -1,19 +1,19 @@
 // =========================
 // Modal (abrir/fechar)
 // =========================
-const openModal = document.getElementById("openModal");
-const closeModal = document.getElementById("closeModal");
-const modal = document.getElementById("myModal");
-
-openModal.addEventListener("click", () => {
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-});
-
-closeModal.addEventListener("click", () => {
-  modal.classList.remove("flex");
-  modal.classList.add("hidden");
-});
+//const openModal = document.getElementById("openModal");
+//const closeModal = document.getElementById("closeModal");
+//const modal = document.getElementById("myModal");
+//
+//openModal.addEventListener("click", () => {
+//  modal.classList.remove("hidden");
+//  modal.classList.add("flex");
+//});
+//
+//closeModal.addEventListener("click", () => {
+//  modal.classList.remove("flex");
+//  modal.classList.add("hidden");
+//});
 
 // =========================
 // Carousel individual (1 por vez com botões prev/next)
