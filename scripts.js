@@ -53,7 +53,7 @@ const images = [
   "./logos/Catalent.svg",
   "./logos/Grupo_Petrópolis_logo.svg",
   "./logos/sanovo.svg",
-  "./logos/eurofarma_logo.png",
+  "./logos/Eurofarma_logo.png",
   "./logos/ihara.svg",
   "./logos/metso.svg",
   "./logos/vitopel.png",
