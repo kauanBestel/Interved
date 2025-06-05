@@ -57,7 +57,6 @@ const images = [
   "./logos/ihara.svg",
   "./logos/metso.svg",
   "./logos/vitopel.png",
-  "./logos/LogoZanchetta.webp",
   "./logos/schaeffler-logo.svg",
   "./logos/votorantim-cimentos-seeklogo.png",
 ];
